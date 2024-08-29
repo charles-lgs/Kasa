@@ -23,17 +23,19 @@
         }
         a {
             text-decoration: none;
+            text-transform: uppercase;
             color: $black-color;
             font-size: 12px;
         }
     }
 
-    @media screen and (min-width: 460px) and (max-width: 1920px){
+    @media screen and (min-width: 768px) and (max-width: 1920px){
         .container-logo {
             width: 210px;
         }
         .navigation a {
             font-size: 24px;
+            text-transform: none;
         }
       }
 }
