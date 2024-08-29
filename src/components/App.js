@@ -1,23 +1,33 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Banner from "./Banner";
+import BannerImage from "./BannerImage";
+import homeBackgroundImg from "../assets/Kasa-1.png";
+import proposBackgroundImg from "../assets/Kasa-2.png";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <main>
+      <div className="main-container">
         <Banner />
-        <h1>Home</h1>
-      </main>
+        <main>
+          <BannerImage
+            title="Chez vous, partout et ailleurs"
+            backgroundImage={homeBackgroundImg}
+          />
+        </main>
+      </div>
     ),
   },
   {
     path: "/A-Propos",
     element: (
-      <main>
+      <div className="main-container">
         <Banner />
-        <h1>A Propos</h1>
-      </main>
+        <main>
+          <BannerImage title="" backgroundImage={proposBackgroundImg} />
+        </main>
+      </div>
     ),
   },
   {
