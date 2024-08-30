@@ -1,4 +1,4 @@
-[
+const logementList = [
   {
     identifiant: "c67ab8a7",
     titre: "Appartement cosy",
@@ -584,3 +584,4 @@
     "Mots clés": ["Louvre", "Marais", "Rivoli"],
   },
 ];
+export default logementList;

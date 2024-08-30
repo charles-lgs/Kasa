@@ -1,8 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Banner from "./Banner";
 import BannerImage from "./BannerImage";
+import Gallery from "./Gallery";
 import homeBackgroundImg from "../assets/Kasa-1.png";
 import proposBackgroundImg from "../assets/Kasa-2.png";
+import logementsList from "../data/logementsList";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,7 @@ const router = createBrowserRouter([
             title="Chez vous, partout et ailleurs"
             backgroundImage={homeBackgroundImg}
           />
+          <Gallery logements={logementsList} />
         </main>
       </div>
     ),
