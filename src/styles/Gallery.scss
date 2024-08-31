@@ -5,9 +5,9 @@
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 20px;
-    margin: 50px 0;
+    margin: 50px 20px;
     padding: 20px;
-    background-color: $light-gray;
+    background-color: $white-color;
     border-radius: 20px;
 
     .card {
@@ -34,6 +34,7 @@
         }
     }
     @media screen and (min-width: 426px) and (max-width: 1920px) {
+        background-color: $light-gray;
         .card {
             height: 340px;
         }
@@ -47,8 +48,8 @@
 @media screen and (min-width: 1439px) and (max-width: 1920px) {
     .gallery {
         grid-template-columns: repeat(3, 340px);
-        padding: 60px;
-        gap: 50px;
+        padding: 30px 35px;
+        gap: 54px;
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1438px) {
