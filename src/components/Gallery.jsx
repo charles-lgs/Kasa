@@ -1,3 +1,5 @@
+import '../styles/Gallery.scss'
+
 function Gallery({logements}) {
     return (
         <div className="gallery">
