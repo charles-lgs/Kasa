@@ -32,6 +32,7 @@ const router = createBrowserRouter([
         <main>
           <BannerImage title="" backgroundImage={proposBackgroundImg} />
         </main>
+        <Footer />
       </div>
     ),
   },
