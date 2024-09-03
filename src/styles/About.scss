@@ -1,0 +1,68 @@
+@import './settings.scss';
+
+.about {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 100%;
+
+    details {
+        margin-bottom: 20px;
+        letter-spacing: normal;
+        
+        summary {
+            background-color: $red-color;
+            height: 30px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+            padding-left: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            color: $white-color;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary::after {
+            content: '';
+            cursor: pointer;
+            background-image: url('../assets/arrow.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+        p {
+            background-color: $light-gray;
+            margin: 0;
+            padding: 20px 20px;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+    }
+    details[open] summary::after {
+        transform: rotate(180deg);
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+    .about {
+        max-width: 1023px;
+        margin-top: 10px;
+        details {
+            margin-bottom: 30px;
+            summary {
+                height: 52px;
+                font-size: 24px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}

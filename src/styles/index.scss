@@ -16,6 +16,13 @@ code {
     monospace;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
 .main-container {
   max-width: 375px;
   min-width: 375px;

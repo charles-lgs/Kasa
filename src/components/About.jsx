@@ -1,3 +1,5 @@
+import '../styles/About.scss'
+
 function About({abouts}) {
     return (
         <div className="about">
