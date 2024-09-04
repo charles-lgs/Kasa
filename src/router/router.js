@@ -8,6 +8,7 @@ import BannerImage from "../components/BannerImage";
 import Gallery from "../components/Gallery";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import NotFound from "../components/NotFound";
 
 import logementsList from "../data/logementsList";
 import about from "../data/about";
@@ -45,6 +46,18 @@ const router = createBrowserRouter([
   {
     path: "/Fiche-Logement",
     element: <div>Fiche Logement</div>,
+  },
+  {
+    path: "*",
+    element: (
+      <div className="main-container">
+        <Banner />
+        <main>
+          <NotFound />
+        </main>
+        <Footer />
+      </div>
+    ),
   },
 ]);
 
