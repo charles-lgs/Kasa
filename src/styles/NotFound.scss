@@ -1,0 +1,35 @@
+@import './settings.scss';
+
+.not-found {
+    text-align: center;
+    margin-bottom: 100px;
+
+    h1 {
+        color: $red-color;
+        font-size: 96px;
+        font-weight: 700;
+        margin: 100px 0;
+    }
+    h2 {
+        color: $red-color;
+        font-size: 18px;
+        padding: 0 30px;
+        margin-bottom: 100px;
+    }
+
+    .link {
+        color: $black-color;
+        font-size: 14px;
+    }
+    @media screen and (min-width: 426px) and (max-width: 1920px) {
+        h1 {
+            font-size: 288px;
+        }
+        h2 {
+            font-size: 36px;
+        }
+        .link {
+            font-size: 18px;
+        }
+    }
+}
