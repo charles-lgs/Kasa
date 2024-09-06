@@ -27,7 +27,7 @@ const logementList = [
       "Frigo",
       "WIFI",
     ],
-    "Mots clés": ["Batignolle", "Montmartre"],
+    MotsClés: ["Batignolle", "Montmartre"],
   },
   {
     identifiant: "b9123946",
@@ -59,7 +59,7 @@ const logementList = [
       "Cuisine équipée",
       "Télévision",
     ],
-    "Mots clés": ["Canal Saint-Martin", "République", "Appartement"],
+    MotsClés: ["Canal Saint-Martin", "République", "Appartement"],
   },
   {
     identifiant: "46d188c5",
@@ -82,7 +82,7 @@ const logementList = [
     notation: "3",
     emplacement: "Île de France - Paris 20e",
     équipements: ["Wi-Fi", "Cuisine équipée", "Télévision", "Sèche Cheveux"],
-    "Mots clés": ["Les Buttes Chaumont", "Laumière", "Studio"],
+    MotsClés: ["Les Buttes Chaumont", "Laumière", "Studio"],
   },
   {
     identifiant: "7af00cd6",
@@ -111,7 +111,7 @@ const logementList = [
       "Climatisation",
       "Télévision",
     ],
-    "Mots clés": ["Parmentier", "Marais", "Parc", "Vie nocturne"],
+    MotsClés: ["Parmentier", "Marais", "Parc", "Vie nocturne"],
   },
   {
     identifiant: "0979876d",
@@ -142,7 +142,7 @@ const logementList = [
       "Chambre Séparée",
       "Parking",
     ],
-    "Mots clés": ["Goncourt", "Proche commerces"],
+    MotsClés: ["Goncourt", "Proche commerces"],
   },
   {
     identifiant: "f72a452f",
@@ -166,7 +166,7 @@ const logementList = [
     notation: "5",
     emplacement: "Île de France - Paris 18e",
     équipements: ["Chambre Séparée", "Parking"],
-    "Mots clés": ["Montmartre", "Culture", "Charme"],
+    MotsClés: ["Montmartre", "Culture", "Charme"],
   },
   {
     identifiant: "b4c67936",
@@ -196,7 +196,7 @@ const logementList = [
       "Bureau",
       "Parking",
     ],
-    "Mots clés": ["Transports", "Bon marché", "18ème"],
+    MotsClés: ["Transports", "Bon marché", "18ème"],
   },
   {
     identifiant: "bc6f7112",
@@ -228,7 +228,7 @@ const logementList = [
       "Lit King Size",
       "Ascenseur",
     ],
-    "Mots clés": ["Luxe", "Tour Eiffel", "T3", "6ème"],
+    MotsClés: ["Luxe", "Tour Eiffel", "T3", "6ème"],
   },
   {
     identifiant: "cb2f9222",
@@ -258,7 +258,7 @@ const logementList = [
       "Wi-Fi",
       "Parking",
     ],
-    "Mots clés": ["Montparnasse", "Commerces", "Famille"],
+    MotsClés: ["Montparnasse", "Commerces", "Famille"],
   },
   {
     identifiant: "d60ca600",
@@ -288,7 +288,7 @@ const logementList = [
       "Wi-Fi",
       "Ascenseur",
     ],
-    "Mots clés": ["Père Lachaise", "11e", "Métro 3", "Métro 2"],
+    MotsClés: ["Père Lachaise", "11e", "Métro 3", "Métro 2"],
   },
   {
     identifiant: "2cf259e1",
@@ -311,7 +311,7 @@ const logementList = [
     notation: "4",
     emplacement: "Île de France - Paris 11e",
     équipements: ["Clic clac", "Quatre", "Sèche Cheveux", "Wi-Fi"],
-    "Mots clés": ["Marais", "Atelier", "Parc"],
+    MotsClés: ["Marais", "Atelier", "Parc"],
   },
   {
     identifiant: "5323c29b",
@@ -341,13 +341,7 @@ const logementList = [
       "Télévision",
       "Bouilloire",
     ],
-    "Mots clés": [
-      "Marais",
-      "République",
-      "Atelier",
-      "Proche Métros",
-      "Commerces",
-    ],
+    MotsClés: ["Marais", "République", "Atelier", "Proche Métros", "Commerces"],
   },
   {
     identifiant: "af6d2d48",
@@ -377,7 +371,7 @@ const logementList = [
       "Frigo",
       "Bouilloire",
     ],
-    "Mots clés": ["Forêt", "Nature", "Musée d'Écouen"],
+    MotsClés: ["Forêt", "Nature", "Musée d'Écouen"],
   },
   {
     identifiant: "7cbb378e",
@@ -409,7 +403,7 @@ const logementList = [
       "Télévision",
       "Cintres",
     ],
-    "Mots clés": ["Forêt", "Nature", "Grande maison"],
+    MotsClés: ["Forêt", "Nature", "Grande maison"],
   },
   {
     identifiant: "ba55a0cc",
@@ -444,7 +438,7 @@ const logementList = [
       "Micro-Ondes",
       "Parking",
     ],
-    "Mots clés": ["Nature", "Groupe", "Maison"],
+    MotsClés: ["Nature", "Groupe", "Maison"],
   },
   {
     identifiant: "1e181317",
@@ -476,7 +470,7 @@ const logementList = [
       "Micro-Ondes",
       "Parking",
     ],
-    "Mots clés": ["La Défense", "Loft", "Luxe"],
+    MotsClés: ["La Défense", "Loft", "Luxe"],
   },
   {
     identifiant: "1e180563",
@@ -507,7 +501,7 @@ const logementList = [
       "Wi-Fi",
       "Micro-Ondes",
     ],
-    "Mots clés": ["Vue Parc", "Appartement de Charme"],
+    MotsClés: ["Vue Parc", "Appartement de Charme"],
   },
   {
     identifiant: "2139a317",
@@ -527,7 +521,7 @@ const logementList = [
     notation: "2",
     emplacement: "Île de France - Paris 20e",
     équipements: ["Bouilloire", "Wi-Fi", "Micro-Ondes"],
-    "Mots clés": ["Vue Parc", "Métros"],
+    MotsClés: ["Vue Parc", "Métros"],
   },
   {
     identifiant: "6ff132c6",
@@ -555,7 +549,7 @@ const logementList = [
       "Wi-Fi",
       "Micro-Ondes",
     ],
-    "Mots clés": ["Atelier", "Charmant", "13e"],
+    MotsClés: ["Atelier", "Charmant", "13e"],
   },
   {
     identifiant: "cb02d69b",
@@ -581,7 +575,7 @@ const logementList = [
       "Frigo",
       "Baignoire",
     ],
-    "Mots clés": ["Louvre", "Marais", "Rivoli"],
+    MotsClés: ["Louvre", "Marais", "Rivoli"],
   },
 ];
 export default logementList;
