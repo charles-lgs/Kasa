@@ -3,6 +3,7 @@ import {useEffect} from 'react'
 import Slideshow from './Slideshow'
 import Rating from './Rating'
 import DetailsLogement from './DetailsLogement'
+import Keywords from './Keywords'
 
 function LogementPage({logements}) {
     const navigate = useNavigate()
@@ -26,7 +27,7 @@ function LogementPage({logements}) {
                 <div>
                     <h1>{logement.titre}</h1>
                     <p>{logement.emplacement}</p>
-                    {/* mots clé à ajouter */}
+                    <Keywords words={logement.MotsClés} />
                 </div>
                 <div>
                     <Rating score={parseInt(logement.notation)} />
