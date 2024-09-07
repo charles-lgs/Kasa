@@ -2,6 +2,7 @@ import {useParams, useNavigate} from 'react-router-dom'
 import {useEffect} from 'react'
 import Slideshow from './Slideshow'
 import Rating from './Rating'
+import DetailsLogement from './DetailsLogement'
 
 function LogementPage({logements}) {
     const navigate = useNavigate()
@@ -34,9 +35,7 @@ function LogementPage({logements}) {
                         <img src={logement.hôte.image} alt={`Photo de ${logement.hôte.nom}`} />
                     </div>
                 </div>
-                <div>
-                    {/* AboutLogement à ajouter */}
-                </div>
+                <DetailsLogement description={logement.description} equipements={logement.équipements} />
             </div>
         </div>
     )
