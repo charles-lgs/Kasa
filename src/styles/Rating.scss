@@ -1,0 +1,11 @@
+@import './settings.scss';
+
+.rating {
+
+    .filled {
+        color: $red-color;
+    }
+    .empty {
+        color: $empty-star;
+    }
+}

@@ -1,6 +1,7 @@
 import {useParams, useNavigate} from 'react-router-dom'
 import {useEffect} from 'react'
 import Slideshow from './Slideshow'
+import Rating from './Rating'
 
 function LogementPage({logements}) {
     const navigate = useNavigate()
@@ -26,10 +27,12 @@ function LogementPage({logements}) {
                     <p>{logement.emplacement}</p>
                     {/* mots clé à ajouter */}
                 </div>
-                {/* étoiles à ajouter */}
                 <div>
-                    <h2>{logement.hôte.nom}</h2>
-                    <img src={logement.hôte.image} alt={`Photo de ${logement.hôte.nom}`} />
+                    <Rating score={parseInt(logement.notation)} />
+                    <div>
+                        <h2>{logement.hôte.nom}</h2>
+                        <img src={logement.hôte.image} alt={`Photo de ${logement.hôte.nom}`} />
+                    </div>
                 </div>
                 <div>
                     {/* AboutLogement à ajouter */}
