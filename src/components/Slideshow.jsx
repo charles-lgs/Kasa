@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import '../styles/Slideshow.scss'
 import arrowLeft from '../assets/arrow-left.png'
 import arrowRight from '../assets/arrow-right.png'
 
@@ -23,10 +24,10 @@ function Slideshow({photos, title}) {
 
     return (
         <div className='slideshow'>
-            <img src={arrowLeft} alt='Flèche gauche' onClick={goToPrevious} />
-            <img src={arrowRight} alt='Flèche droite' onClick={goToNext} />
-            <img src={photos[currentIndex]} alt={title} />
-            <div>
+            <img src={arrowLeft} alt='Flèche gauche' onClick={goToPrevious} className='arrow arrow-left' />
+            <img src={arrowRight} alt='Flèche droite' onClick={goToNext} className='arrow arrow-right' />
+            <img src={photos[currentIndex]} alt={title} className='slideshow-image' />
+            <div className='counter'>
                 {currentIndex + 1}/{photos.length}
             </div>
         </div>
