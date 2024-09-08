@@ -1,4 +1,4 @@
-
+import '../styles/DetailsLogement.scss'
 
 function DetailsLogement({description, equipements}) {
     return (
