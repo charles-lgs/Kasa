@@ -1,4 +1,4 @@
-
+import '../styles/Keywords.scss'
 
 function Keywords({words}) {
     return (

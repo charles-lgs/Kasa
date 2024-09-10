@@ -25,15 +25,17 @@ function LogementPage({logements}) {
             <Slideshow photos={logement.photos} title={logement.titre} />
             <div>
                 <div>
-                    <h1>{logement.titre}</h1>
-                    <p>{logement.emplacement}</p>
-                    <Keywords words={logement.MotsClés} />
-                </div>
-                <div>
-                    <Rating score={parseInt(logement.notation)} />
                     <div>
-                        <h2>{logement.hôte.nom}</h2>
-                        <img src={logement.hôte.image} alt={`Photo de ${logement.hôte.nom}`} />
+                        <h1>{logement.titre}</h1>
+                        <p>{logement.emplacement}</p>
+                        <Keywords words={logement.MotsClés} />
+                    </div>
+                    <div>
+                        <Rating score={parseInt(logement.notation)} />
+                        <div>
+                            <h2>{logement.hôte.nom}</h2>
+                            <img src={logement.hôte.image} alt={`Photo de ${logement.hôte.nom}`} />
+                        </div>
                     </div>
                 </div>
                 <DetailsLogement description={logement.description} equipements={logement.équipements} />

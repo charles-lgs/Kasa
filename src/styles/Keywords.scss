@@ -1,0 +1,28 @@
+@import './settings.scss';
+
+.keywords {
+    display: flex;
+    gap: 10px;
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $red-color;
+        color: $white-color;
+        font-size: 10px;
+        font-weight: 700;
+        border-radius: 5px;
+        height: 18px;
+        letter-spacing: normal;
+        padding: 0 20px;
+    }
+
+    @media screen and (min-width: 426px) and (max-width: 1920px) {
+        span {
+            height: 25px;
+            font-size: 14px;
+            border-radius: 10px;
+        }
+    }
+}
