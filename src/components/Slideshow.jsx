@@ -17,7 +17,7 @@ function Slideshow({photos, title}) {
     if (photos.length <= 1) {
         return (
             <div className='slideshow'>
-                <img src={photos[0]} alt={title} />
+                <img src={photos[0]} alt={title} className='slideshow-image' />
             </div>
         )
     }
