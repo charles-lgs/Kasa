@@ -1,0 +1,84 @@
+@import './settings.scss';
+
+.logement-page {
+    width: 100%;
+    letter-spacing: normal;
+
+    .all-description {
+
+        .title-and-host {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+
+                h1 {
+                    color: $red-color;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .rating-and-host {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+
+                .host {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    h2 {
+                        font-size: 12px;
+                        color: $red-color;
+                        text-align: end;
+                        width: 60px;
+                        font-weight: 500;
+                    }
+                    img {
+                        height: 32px;
+                        width: 32px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 426px) and (max-width: 1920px) {
+            .title-and-host {
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .title {
+                    h1 {
+                        font-size: 36px;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        font-size: 18px;
+                        margin-top: 0;
+                    }
+                }
+                .rating-and-host {
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    gap: 20px;
+
+                    .host {
+
+                        h2 {
+                            font-size: 18px;
+                        }
+                        img {
+                            height: 64px;
+                            width: 64px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

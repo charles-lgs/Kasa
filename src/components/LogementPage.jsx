@@ -1,5 +1,6 @@
 import {useParams, useNavigate} from 'react-router-dom'
 import {useEffect} from 'react'
+import '../styles/LogementPage.scss'
 import Slideshow from './Slideshow'
 import Rating from './Rating'
 import DetailsLogement from './DetailsLogement'
@@ -21,18 +22,18 @@ function LogementPage({logements}) {
     }
 
     return (
-        <div>
+        <div className='logement-page'>
             <Slideshow photos={logement.photos} title={logement.titre} />
-            <div>
-                <div>
-                    <div>
+            <div className='all-description'>
+                <div className='title-and-host'>
+                    <div className='title'>
                         <h1>{logement.titre}</h1>
                         <p>{logement.emplacement}</p>
                         <Keywords words={logement.MotsClés} />
                     </div>
-                    <div>
+                    <div className='rating-and-host'>
                         <Rating score={parseInt(logement.notation)} />
-                        <div>
+                        <div className='host'>
                             <h2>{logement.hôte.nom}</h2>
                             <img src={logement.hôte.image} alt={`Photo de ${logement.hôte.nom}`} />
                         </div>
